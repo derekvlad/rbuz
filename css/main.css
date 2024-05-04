@@ -254,3 +254,72 @@ body {
 .stages{
     padding-top: 100px;
 }
+.stages__title{
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.stages__items{
+    display: flex;
+    justify-content: space-between;
+}
+.stages__item{
+    max-width: 280px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.stages__item-num{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../img/666666.png);
+    text-align: center;
+    padding: 15px 0;
+    color: #cfe4db;
+   
+}
+.stages__item-title{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    min-height: 60px;
+    
+    
+}
+.stages__item:not(:first-child){
+    margin-left: 40px;
+}
+.stages__btn{
+    padding: 10px 30px;
+    background-color: #DC2828;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #fff;
+    max-width: 200px;
+    display: block;
+    display: flex;
+    margin: 0 auto;
+}
+.stages__btn::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background: #fff;
+    filter: blur(1px);
+    top: -20px;
+    left: -37px;
+    transform: rotate(45deg);
+
+
+}
+.stages__btn:hover.stages__btn::before {
+    left: 250px;
+    transition: linear 0.5s;
+}
